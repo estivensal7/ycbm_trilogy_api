@@ -25,7 +25,7 @@ app.use(function(req, res, next) {
 
 // Route to serve JSON data
 app.use("/", function(req, res) {
-	return ycbm;
+	return res.json(ycbm);
 });
 
 // Start the API server
